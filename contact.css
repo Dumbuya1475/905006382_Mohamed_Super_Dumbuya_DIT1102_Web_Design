@@ -1,0 +1,38 @@
+.contact-section .section-container {
+  padding: 10rem 15rem;
+  flex-direction: row;
+  justify-content: left;
+  gap: 10rem;
+}
+.contact-section .section-header {
+  text-align: left;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-section form input,
+textarea {
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.contact-section button {
+  background-color: rgb(13, 73, 143);
+  width: fit-content;
+  font-size: 20px;
+  padding: 10px 50px;
+  margin-top: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.contact-section .form-right-content ul{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}

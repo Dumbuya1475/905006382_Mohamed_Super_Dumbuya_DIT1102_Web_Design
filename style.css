@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  list-style: none;
+  line-height: 1.5;
+}
+
+/* Section default style */
+section .section-container {
+  padding: 150px 0 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #fff;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  /* padding-top: 3rem; */
+  /* margin-left: 20rem; */
+  /* margin-right: 20rem; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header .logo {
+  font-weight: bold;
+  font-size: 30px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:  15px 13rem 15px 13rem;
+  width: 100%;
+  flex-direction: row;
+  background-color: #fff;
+  /* border-radius: 10px; */
+  height: 3rem;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+header nav ul a{
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
+header nav ul a:active{
+  font-weight: bold;
+}
+header nav ul a:hover{
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+  
+}
+header nav ul li {
+  display: flex;
+  margin: 2px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* HERO SECTION */
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/image2.jpeg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+
+.bg-layer {
+  background-color: rgba(#000, #000, #000, 12);
+  /* position: ab; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.bg-layer .hero-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.h1-text {
+  font-size: 5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+.hero .p-text {
+  color: #fff !important;
+}
+.hero-text .p-text {
+  /* font-size: 1.2rem; */
+  font-size: 20px;
+
+  width: 900px;
+}
+
+/* Hero Content */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.input-container {
+  display: flex;
+  gap: 2rem;
+}
+.hero-content input,
+button {
+  padding: 15px;
+  border-radius: 50rem;
+  width: 400px;
+}
+.hero-content button {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 150px;
+  background-color: rgb(13, 73, 143);
+}
+
+section.house-listing {
+  background-color: #eff0f3;
+}
+section.house-listing .section-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section .section-header {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+section .section-header .h2-text {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+section .section-header .h2-text,
+.p-text {
+  width: 600px;
+}
+.house-listing .h2-text,
+.p-text {
+  color: #000 !important;
+}
+
+.listing-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  /* display: grid; */
+  /* grid-template-columns: repeat(2); */
+}
+
+.listing-card-container .card {
+  width: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.listing-card-container .card-img {
+  height: 200px;
+}
+
+.listing-card-container img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+
+  /* width: fit-content; */
+  /* height: fit-content; */
+  height: 200px;
+}
+
+.card-bottom-content {
+  padding: 30px;
+}
+.card-bottom-content .card-footer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-bottom-content button {
+  width: fit-content;
+  padding: 10px 30px;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgb(13, 73, 143);
+}
+
+/* CTA Section */
+section.cta-section {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(./assets/images/image10.jpeg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+
+section .cta-container {
+  background-color: rgb(13, 73, 143);
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 750px;
+  border-radius: 20px;
+}
+
+section .cta-container .h2-text,
+.cta-container .p-text {
+  color: #fff !important ;
+}
+section .cta-container button {
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 200px;
+}
+
+/* Footer section style */
+footer {
+  background-color: rgb(13, 73, 143);
+  border-width: 20px;
+  border-top: solid #fff
+}
+
+footer .footer-container {
+  padding: 30px 150px;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+footer .sm-icons ul {
+  display: flex;
+  flex-direction: row;
+}
+footer .sm-icons ul li {
+  padding: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 500px;
+  background-color: yellow;
+}
+
+footer .footer-copy {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: small;
+}
+
+/* Popover Main Window Styles */
+#hostel-popover {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  padding: 0;
+  max-width: 800px;
+  width: 90%;
+  overflow: hidden;
+  background-color: #ffffff;
+  
+  /* Center the popover cleanly on screen */
+  margin: auto; 
+}
+
+/* Two-Column Layout */
+.popover-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 400px;
+}
+
+/* Left Image Box */
+.popover-media {
+  flex: 1;
+  background-color: #f0f0f0;
+}
+
+.popover-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right Content Box */
+.popover-content {
+  flex: 1.2;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Typography & Details */
+.popover-header h2 {
+  margin: 0 0 6px 0;
+  font-size: 1.6rem;
+  color: #1a1a1a;
+  font-family: sans-serif;
+}
+
+.rating {
+  font-size: 0.95rem;
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.popover-description {
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+/* Dimmed & Blurred Page Overlay */
+#hostel-popover::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+/* Buttons */
+.close-btn {
+  background-color: #0056b3;
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s ease;
+}
+
+.close-btn:hover {
+  background-color: #004085;
+}
+
+/* Mobile Responsiveness (Stacked columns on small screens) */
+@media (max-width: 650px) {
+  .popover-container {
+    flex-direction: column;
+  }
+  .popover-media {
+    height: 200px;
+  }
+}

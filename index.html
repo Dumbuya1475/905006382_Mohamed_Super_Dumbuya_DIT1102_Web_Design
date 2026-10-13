@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Assignment 1</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">EduSpace</div>
+
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/features.html">Features</a></li>
+          <li><a href="/services.html">Service</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="bg-layer">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="h1-text">Student Reservation Hub</h1>
+            <p class="p-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+              aspernatur debitis in reiciendis labore nihil nulla enim facere
+              ullam harum!
+            </p>
+          </div>
+
+          <div class="input-container">
+            <input type="text" placeholder="Search house, student...." />
+            <button>Submit</button>
+          </div>
+          <!-- <div class="availability-box">
+          <div class="availability-box-content">
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h3>Lorem ipsum dolor sit.</h3>
+            </div>
+            <div class="input-box">
+              <input type="date" name="" id="" />
+              <input type="date" name="" id="" />
+            </div>
+            <div class="check-btn-container">
+              <button type="submit" class="check-btn">Submit</button>
+            </div>
+          </div>
+        </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="house-listing">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="h2-text">Find Your Campus Home</h2>
+          <p class="p-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+            provident?
+          </p>
+        </div>
+
+        <!-- The Trigger Button (Place this inside your hostel card components) -->
+        <button popovertarget="hostel-popover" class="view-details-btn">
+          View Details
+        </button>
+
+        <!-- The Popover Modal Component -->
+        <div id="hostel-popover" popover>
+          <div class="popover-container">
+            <!-- Left Column: Image -->
+            <div class="popover-media">
+              <img
+                src="https://unsplash.com"
+                alt="Hill Station Hostel Exterior"
+              />
+            </div>
+
+            <!-- Right Column: Text & Content -->
+            <div class="popover-content">
+              <div class="popover-header">
+                <h2>Hill Station Hostel</h2>
+                <div class="rating">⭐ 4.8 / 5.0</div>
+              </div>
+
+              <p class="popover-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                ipsam, illo modi saepe velit odio error libero delectus facere
+                maxime! Experience premium campus living with modern amenities,
+                study lounges, and high-speed internet.
+              </p>
+
+              <div class="popover-footer">
+                <!-- Close Button (uses popovertargetaction="hide") -->
+                <button
+                  popovertarget="hostel-popover"
+                  popovertargetaction="hide"
+                  class="close-btn"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="listing-card-container">
+          <div class="card">
+            <div class="card-img">
+              <img src="/assets/images/image4.jpeg" alt="" />
+            </div>
+            <div class="card-bottom-content">
+              <div class="card-header">
+                <h3 class="h3-text">Hill Station Hostel</h3>
+              </div>
+              <div class="card-par">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  ipsam, illo modi saepe velit odio error libero delectus facere
+                  maxime!
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <p>Lorem, ipsum dolor.</p>
+                <button popovertarget="hostel-popover">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="/assets/images/image7.jpeg" alt="" />
+            </div>
+            <div class="card-bottom-content">
+              <div class="card-header">
+                <h3 class="h3-text">Hill Station Hostel</h3>
+              </div>
+              <div class="card-par">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  ipsam, illo modi saepe velit odio error libero delectus facere
+                  maxime!
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <p>Lorem, ipsum dolor.</p>
+                <button>View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="/assets/images/image3.jpeg" alt="" />
+            </div>
+            <div class="card-bottom-content">
+              <div class="card-header">
+                <h3 class="h3-text">Hill Station Hostel</h3>
+              </div>
+              <div class="card-par">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  ipsam, illo modi saepe velit odio error libero delectus facere
+                  maxime!
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <p>Lorem, ipsum dolor.</p>
+                <button>View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="section-container">
+        <div class="cta-container">
+          <div class="section-header">
+            <h2 class="h2-text">Need a Perfect Hostel?</h2>
+            <p class="p-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae nihil vero temporibus dignissimos quas corporis
+              tempore. Quis, fugit perspiciatis. Maxime aut, libero nihil
+              voluptates accusamus deserunt ut natus voluptate ipsa.
+            </p>
+          </div>
+          <div class="input-container">
+            <!-- <input type="text" placeholder="Search house, student...." /> -->
+            <button>Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-head">
+          <h1>EduSpace</h1>
+          <div class="sm-icons">
+            <ul>
+              <a href="">
+                <li>F</li>
+              </a>
+              <a href="">
+                <li>W</li>
+              </a>
+              <a href="">
+                <li>X</li>
+              </a>
+              <a href="">
+                <li>T</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">CopyWright 2026 EduSpace</div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+body {
+  /* background-color: red; */
+}
+
+section.services-listing .section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+/* .services-listing .section-header .h2-text,
+.services-listing .section-header .p-text {
+  text-align: left !important;
+} */
+section .section-header .p-text {
+  font-size: 20px;
+}
+section.services-listing .services-listing-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+section.services-listing .services-listing-container .card {
+  width: 300px;
+  border: solid #000;
+  padding: 30px;
+  border-radius: 20px;
+  /* box-shadow: #000; */
+}
+.services-listing-container .card .icon {
+  padding: 30px;
+  background-color: aquamarine;
+  width: 40px;
+  height: 40px;
+  border-radius: 300px;
+  margin-bottom: 20px;
+}
+.services-listing-container .card .h3-text {
+  margin-bottom: 20px;
+}
