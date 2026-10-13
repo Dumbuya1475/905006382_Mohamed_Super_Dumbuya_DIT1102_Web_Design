@@ -1,10 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: none;
   list-style: none;
   line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 /* Section default style */
@@ -38,17 +44,19 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:  15px 13rem 15px 13rem;
+  padding: 15px clamp(1rem, 4vw, 13rem);
   width: 100%;
   flex-direction: row;
   background-color: #fff;
-  /* border-radius: 10px; */
-  height: 3rem;
+  min-height: 3rem;
+  gap: 1rem;
 }
 header nav ul {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 header nav ul a{
@@ -69,6 +77,19 @@ header nav ul li {
   margin: 2px;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.menu-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.menu-toggle {
+  display: none;
 }
 
 /* HERO SECTION */
@@ -101,7 +122,7 @@ header nav ul li {
   justify-content: center;
 }
 .h1-text {
-  font-size: 5rem;
+  font-size: clamp(2.6rem, 5vw, 5rem);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
 }
@@ -111,8 +132,7 @@ header nav ul li {
 .hero-text .p-text {
   /* font-size: 1.2rem; */
   font-size: 20px;
-
-  width: 900px;
+  width: min(900px, 90vw);
 }
 
 /* Hero Content */
@@ -127,12 +147,14 @@ header nav ul li {
 .input-container {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .hero-content input,
-button {
+.hero-content button {
   padding: 15px;
   border-radius: 50rem;
-  width: 400px;
+  width: min(400px, 100%);
 }
 .hero-content button {
   color: #fff;
@@ -166,7 +188,7 @@ section .section-header .h2-text {
 
 section .section-header .h2-text,
 .p-text {
-  width: 600px;
+  width: min(600px, 100%);
 }
 .house-listing .h2-text,
 .p-text {
@@ -175,15 +197,16 @@ section .section-header .h2-text,
 
 .listing-card-container {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 3rem;
   /* display: grid; */
   /* grid-template-columns: repeat(2); */
 }
 
 .listing-card-container .card {
-  width: 350px;
+  width: min(350px, 100%);
   background-color: #fff;
   border-radius: 20px;
 }
@@ -211,6 +234,8 @@ section .section-header .h2-text,
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 .card-bottom-content button {
   width: fit-content;
@@ -235,12 +260,12 @@ section.cta-section {
 
 section .cta-container {
   background-color: rgb(13, 73, 143);
-  padding: 5rem;
+  padding: clamp(2rem, 5vw, 5rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 750px;
+  width: min(750px, calc(100% - 2rem));
   border-radius: 20px;
 }
 
@@ -262,7 +287,7 @@ footer {
 }
 
 footer .footer-container {
-  padding: 30px 150px;
+  padding: 30px clamp(1.5rem, 5vw, 9.375rem);
   display: flex;
   flex-direction: column;
 }
@@ -272,6 +297,8 @@ footer .footer-head {
   justify-content: space-between;
   align-items: center;
   color: #fff;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 footer .sm-icons ul {
@@ -291,6 +318,140 @@ footer .footer-copy {
   text-align: center;
   padding: 10px;
   font-size: small;
+}
+
+@media (max-width: 900px) {
+  header {
+    position: relative;
+  }
+
+  header nav {
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .bg-layer {
+    padding: 5rem 1rem 4rem;
+  }
+
+  .listing-card-container {
+    flex-direction: column;
+  }
+
+  .card-bottom-content .card-footer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 650px) {
+  header nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  header nav .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    width: 26px;
+    height: 2px;
+    background-color: #000;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .menu-checkbox:focus-visible + .menu-toggle {
+    outline: 2px solid rgb(13, 73, 143);
+    outline-offset: 3px;
+  }
+
+  .menu-checkbox:checked + .menu-toggle span:first-child {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-checkbox:checked + .menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-checkbox:checked + .menu-toggle span:last-child {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  header nav ul {
+    display: none;
+    grid-column: 1 / -1;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+  }
+
+  .menu-checkbox:checked ~ ul {
+    display: flex;
+  }
+
+  header nav ul li {
+    margin: 0;
+  }
+
+  header nav ul a {
+    display: block;
+    padding: 0.75rem 0;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-text .p-text,
+  section .section-header .p-text {
+    width: min(100%, 90vw);
+  }
+
+  .input-container {
+    flex-direction: column;
+    width: min(100%, 400px);
+  }
+
+  .hero-content input,
+  .hero-content button {
+    width: 100%;
+  }
+
+  section .section-header .h2-text {
+    font-size: 2.4rem;
+  }
+
+  .listing-card-container .card {
+    width: min(100%, 350px);
+  }
+
+  .card-bottom-content {
+    padding: 20px;
+  }
+
+  footer .footer-head {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  footer .footer-container {
+    padding: 30px 20px;
+  }
 }
 
 /* Popover Main Window Styles */
