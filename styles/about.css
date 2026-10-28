@@ -1,7 +1,7 @@
 .about-hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./assets/images/image10.jpeg);
+    url(/assets/images/image10.jpeg);
   background-size: cover;
   height: 30vh;
   display: flex;
@@ -29,14 +29,30 @@ section.about-us .section-header .h2-text,
 section.about-us .section-header .p-text{
 font-size: 20px;
 }
-.about-us .about-img-container img {
+
+.about .about-img-container img {
   height: fit-content;
-  width: 500px;
+  width: 1300px;
+  margin: 0;
+}
+.mission .about-img-container {
+  width: 100%;
+  /* display: flex; */
+  /* gap: 0 !important; */
+  /* justify-content: center !important; */
+}
+.mission .about-img-container img {
+  /* height: fit-content;
+  width: 100%;
+  height: 500px;
+  */
   border-radius: 20px;
 }
 section.mission .section-container{
-  height: 500px;
-  padding: 100px;
+  /* height: 500px; */
+  padding: 100px 200px;
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* Mission Section */

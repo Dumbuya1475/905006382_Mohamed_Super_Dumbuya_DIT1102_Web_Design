@@ -1,0 +1,54 @@
+@media (max-width: 900px) {
+  .hero-content {
+    padding: 2rem 1rem;
+  }
+
+  .hero-text .p-text {
+    max-width: 700px;
+  }
+
+  .listing-card-container {
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .listing-card-container .card {
+    width: min(100%, 420px);
+  }
+
+  .cta-container {
+    width: min(100%, 750px);
+  }
+}
+
+@media (max-width: 650px) {
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero-content {
+    gap: 1.5rem;
+  }
+
+  .hero-text .h1-text {
+    font-size: clamp(2.2rem, 11vw, 3.5rem);
+  }
+
+  .house-listing .section-container {
+    padding-top: 40px !important;
+    padding-bottom: 60px !important;
+  }
+
+  .listing-card-container {
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .listing-card-container .card {
+    width: min(100%, 400px);
+  }
+
+  .cta-container {
+    padding: 30px 20px;
+  }
+}

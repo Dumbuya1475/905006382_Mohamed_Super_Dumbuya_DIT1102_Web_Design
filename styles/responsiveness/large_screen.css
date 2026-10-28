@@ -1,0 +1,28 @@
+@media (max-width: 900px) {
+  header {
+    position: relative;
+  }
+
+  header nav {
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .bg-layer {
+    padding: 5rem 1rem 4rem;
+  }
+
+  .listing-card-container {
+    flex-direction: column;
+  }
+
+  .card-bottom-content .card-footer {
+    justify-content: center;
+  }
+}

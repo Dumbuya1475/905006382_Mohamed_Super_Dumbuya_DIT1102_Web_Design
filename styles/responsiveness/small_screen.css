@@ -1,0 +1,153 @@
+@media (max-width: 650px) {
+  header nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  header nav .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    width: 26px;
+    height: 2px;
+    background-color: #000;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+
+  .menu-checkbox:focus-visible + .menu-toggle {
+    outline: 2px solid rgb(13, 73, 143);
+    outline-offset: 3px;
+  }
+
+  .menu-checkbox:checked + .menu-toggle span:first-child {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-checkbox:checked + .menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-checkbox:checked + .menu-toggle span:last-child {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  header nav ul {
+    display: none;
+    grid-column: 1 / -1;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+  }
+
+  .menu-checkbox:checked ~ ul {
+    display: flex;
+  }
+
+  header nav ul li {
+    margin: 0;
+  }
+
+  header nav ul a {
+    display: block;
+    padding: 0.75rem 0;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-text .p-text,
+  section .section-header .p-text {
+    width: min(100%, 90vw);
+  }
+
+  .input-container {
+    flex-direction: column;
+    width: min(100%, 400px);
+  }
+
+  .hero-content input,
+  .hero-content button {
+    width: 100%;
+  }
+
+  section .section-header .h2-text {
+    font-size: 2.4rem;
+  }
+
+  .listing-card-container .card {
+    width: min(100%, 350px);
+  }
+
+  .card-bottom-content {
+    padding: 20px;
+  }
+
+  /* Section Container */
+  .section-container {
+    padding: 0 20px !important;
+  }
+
+  .mission .section-container {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    margin: 0;
+    padding: 0 20px !important;
+    gap: 0px !important;
+  }
+
+  .about .about-img-container {
+    display: none !important;
+  }
+
+  .mission .about-img-container img {
+    border-radius: 10px;
+  }
+
+  .about .section-container {
+    padding: 20px;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    height: fit-content;
+    margin: 0;
+  }
+  .section-header .h2-text {
+    text-align: left !important;
+  }
+  .section-container .p-text {
+    text-align: left;
+    font-size: small !important;
+  }
+  .mission .mission-img-container img,
+  .about .about-img-container img {
+    display: none;
+    margin: 0;
+  }
+
+  footer .footer-head {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  footer .footer-container {
+    padding: 30px 20px;
+  }
+
+  footer .footer-links ul {
+    justify-content: center;
+    gap: 10px 18px;
+  }
+}

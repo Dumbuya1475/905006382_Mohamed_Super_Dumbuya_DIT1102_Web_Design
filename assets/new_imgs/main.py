@@ -3,7 +3,7 @@ import os
 # Path to your folder
 # folder_path = r"C:\Users\YourName\Pictures\MyImages"
 # folder_path = r"C:\Users\dumbu\Desktop\devProjects\dbc-website\public\Maleria"
-folder_path = r"C:/Users/msdumbuya/Desktop/html/assets/images"
+folder_path = r"C:\Users\msdumbuya\Documents\SEM_3_ASS_SUB\Web_design\web_ass_2\assets\new_imgs"
 
 # Image extensions to rename
 image_extensions = (".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp")

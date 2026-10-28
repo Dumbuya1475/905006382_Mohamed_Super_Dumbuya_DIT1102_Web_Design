@@ -1,0 +1,68 @@
+@media (max-width: 900px) {
+  .about-us .section-container {
+    height: auto;
+    gap: 2rem;
+    padding: 60px 6vw;
+  }
+
+  .about .about-img-container,
+  .about .section-header {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .about .about-img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  section.mission .section-container {
+    padding: 60px 6vw;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .mission .about-img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-hero {
+    height: 28vh;
+    min-height: 180px;
+  }
+
+  .about-us .section-container,
+  section.mission .section-container {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto;
+    padding: 45px 20px !important;
+    gap: 1.5rem;
+  }
+
+  .about .about-img-container {
+    display: block !important;
+    width: 100%;
+  }
+
+  .about .about-img-container img,
+  .mission .about-img-container img {
+    display: block;
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+  }
+
+  section.about-us .section-header .h2-text,
+  .about-us .p-text,
+  section.mission .section-header .h2-text,
+  .mission .p-text {
+    text-align: left;
+  }
+}

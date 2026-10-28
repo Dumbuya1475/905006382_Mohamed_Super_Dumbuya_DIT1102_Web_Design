@@ -5,6 +5,7 @@ body{
 section.features-listing .section-container{
     display: flex;
     flex-direction: row-reverse;
+    padding: 100px;
     gap: 50px;
 }
 .features-listing .section-header .h2-text,
@@ -28,13 +29,19 @@ section.features-listing .feature-listing-container .card{
     /* box-shadow: #000; */
 }
 .feature-listing-container .card .icon{
-    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: aquamarine;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 300px;
     margin-bottom: 20px;
-    
+}
+.feature-listing-container .card .icon svg {
+    width: 30px;
+    height: 30px;
+    fill: rgb(13, 73, 143);
 }
 .feature-listing-container .card .h3-text{
     margin-bottom: 20px;
