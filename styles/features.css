@@ -8,6 +8,9 @@ section.features-listing .section-container{
     padding: 100px;
     gap: 50px;
 }
+.features-listing{
+    background-color: #eff0f3;
+}
 .features-listing .section-header .h2-text,
 .features-listing .section-header .p-text{
     text-align: left !important;
@@ -32,7 +35,7 @@ section.features-listing .feature-listing-container .card{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aquamarine;
+    background-color: rgb(13, 73, 143);
     width: 60px;
     height: 60px;
     border-radius: 300px;
@@ -41,7 +44,7 @@ section.features-listing .feature-listing-container .card{
 .feature-listing-container .card .icon svg {
     width: 30px;
     height: 30px;
-    fill: rgb(13, 73, 143);
+    fill: #fff;
 }
 .feature-listing-container .card .h3-text{
     margin-bottom: 20px;

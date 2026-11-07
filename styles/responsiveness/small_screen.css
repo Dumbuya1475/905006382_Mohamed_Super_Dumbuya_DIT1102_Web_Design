@@ -24,9 +24,17 @@
       opacity 0.2s ease;
   }
 
+  .interior-page .menu-toggle span {
+    background-color: #fff;
+  }
+
   .menu-checkbox:focus-visible + .menu-toggle {
     outline: 2px solid rgb(13, 73, 143);
     outline-offset: 3px;
+  }
+
+  .interior-page .menu-checkbox:focus-visible + .menu-toggle {
+    outline-color: #fff;
   }
 
   .menu-checkbox:checked + .menu-toggle span:first-child {

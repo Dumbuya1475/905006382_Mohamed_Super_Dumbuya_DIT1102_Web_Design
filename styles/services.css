@@ -10,6 +10,9 @@ section.services-listing .section-container {
 section.services-listing .section-header{
   margin:0;
 }
+.services-listing{
+  background-color: #eff0f3;
+}
 /* .services-listing .section-header .h2-text,
 .services-listing .section-header .p-text {
   text-align: left !important;
@@ -25,16 +28,42 @@ section.services-listing .services-listing-container {
 
 section.services-listing .services-listing-container .card {
   width: 300px;
-  border: solid #000;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
   padding: 30px;
+  background-color: #fff;
   border-radius: 20px;
+}
+
+section.services-listing .services-listing-container .card:nth-child(1){
+  transform: rotate(-5deg);
+}
+section.services-listing .services-listing-container .card:nth-child(2){
+  transform: rotate(2deg);
+}
+section.services-listing .services-listing-container .card:nth-child(3){
+  transform: rotate(5deg);
+}
+section.services-listing .services-listing-container .card:nth-child(4){
+  transform: rotate(-5deg);
+}
+section.services-listing .services-listing-container .card:nth-child(5){
+  transform: rotate(-2deg);
+}
+section.services-listing .services-listing-container .card:nth-child(6){
+  transform: rotate(5deg);
+}
+
+section.services-listing .services-listing-container .card:hover{
+  transform: rotate(0deg);
+  transition: 0.2s ease-in-out;
 }
 
 .services-listing-container .card .icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aquamarine;
+  background-color: rgb(13, 73, 143);
   width: 60px;
   height: 60px;
   border-radius: 300px;
@@ -43,8 +72,8 @@ section.services-listing .services-listing-container .card {
 .services-listing-container .card .icon svg {
   width: 30px;
   height: 30px;
-  fill: rgb(13, 73, 143);
+  fill: #fff;
 }
 .services-listing-container .card .h3-text {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }

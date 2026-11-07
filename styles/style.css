@@ -41,6 +41,12 @@ header .logo {
   font-size: 30px;
   color: #004085;
 }
+.logo-half {
+  padding: 8px 3px 10px 10px;
+  border-radius: 5px;
+  background-color: #004085;
+}
+
 header nav {
   display: flex;
   align-items: center;
@@ -64,13 +70,26 @@ header nav ul a {
   text-decoration: none;
   font-size: 18px;
   color: #000;
+  padding: 5px 14px;
+  border-radius: 999px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
-header nav ul a:active {
+header nav ul a:hover,
+header nav ul a:focus-visible {
+  font-weight: bold;
+  background-color: #e8f0fb;
+  color: #004085;
+}
+header nav ul a[aria-current="page"] {
+  background-color: rgb(13, 73, 143);
+  color: #fff;
   font-weight: bold;
 }
-header nav ul a:hover {
-  font-weight: bold;
-  transition: 0.2s ease-in-out;
+header nav ul a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
 }
 header nav ul li {
   display: flex;
@@ -90,6 +109,81 @@ header nav ul li {
 
 .menu-toggle {
   display: none;
+}
+
+button {
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  filter: brightness(0.9);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+button:active {
+  transform: translateY(0);
+  filter: brightness(0.82);
+  box-shadow: none;
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(13, 73, 143, 0.4);
+  outline-offset: 3px;
+}
+
+.home-page header {
+  z-index: 2;
+}
+
+.home-page header nav {
+  /* background-color: rgba(0, 0, 0, 0.28); */
+  background-color: transparent;
+  backdrop-filter: blur(1px);
+}
+.home-page header .logo,
+.home-page header nav ul a {
+  color: #fff;
+}
+
+.home-page header nav ul a:hover,
+.home-page header nav ul a:focus-visible {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.home-page header nav ul a[aria-current="page"] {
+  background-color: #fff;
+  color: rgb(13, 73, 143);
+}
+
+.interior-page header {
+  z-index: 2;
+}
+
+.interior-page header nav {
+  background-color: transparent;
+  backdrop-filter: blur(1px);
+}
+
+.interior-page header .logo,
+.interior-page header nav ul a {
+  color: #fff;
+}
+
+.interior-page header nav ul a:hover,
+.interior-page header nav ul a:focus-visible {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.interior-page header nav ul a[aria-current="page"] {
+  background-color: #fff;
+  color: rgb(13, 73, 143);
 }
 
 /* HERO SECTION */
@@ -485,7 +579,6 @@ footer .footer-copy {
   border-radius: 6px;
   cursor: pointer;
   align-self: flex-start;
-  transition: background 0.2s ease;
 }
 
 .close-btn:hover {

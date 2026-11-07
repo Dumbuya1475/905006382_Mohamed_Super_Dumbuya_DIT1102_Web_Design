@@ -1,4 +1,24 @@
 @media (max-width: 900px) {
+  .home-page header {
+    position: absolute;
+  }
+
+  .home-page header nav {
+    flex-direction: row;
+    padding: 0.75rem clamp(1rem, 4vw, 2rem);
+  }
+
+  .home-page .hero {
+    min-height: 100vh;
+    height: auto;
+  }
+
+  .home-page .bg-layer {
+    padding: 6rem 1rem 4rem;
+  }
+}
+
+@media (max-width: 900px) {
   .hero-content {
     padding: 2rem 1rem;
   }
@@ -22,6 +42,29 @@
 }
 
 @media (max-width: 650px) {
+  .home-page header {
+    position: absolute;
+  }
+
+  .home-page header nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .home-page header nav ul {
+    grid-column: 1 / -1;
+  }
+
+  .home-page header nav ul a {
+    padding: 0.75rem 1rem;
+  }
+
+  .home-page .bg-layer {
+    padding-top: 7rem;
+  }
+
   .hero {
     min-height: 80vh;
   }
